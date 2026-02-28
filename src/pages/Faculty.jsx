@@ -16,7 +16,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'Arts',
     },
-    {
+    { image: "/images/MYaqoob.png",
       name: isUrdu ? ' محمد یعقوب رانا' : 'Muhammad Yaqoob Rana',
       designation: isUrdu ? 'پروفیسر' : 'Associate Professor',
       subject: isUrdu ? 'کیمسٹری' : 'Urdu',
@@ -24,7 +24,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'Arts',
     },
-    {
+    { image: "/images/MAkmal.png",
       name: isUrdu ? 'محمد اکمل' : 'Muhammad Akmal',
       designation: isUrdu ? 'اسسٹنٹ پروفیسر' : 'Assistant Professor',
       subject: isUrdu ? 'بائیولوجی' : 'Islamiat',
@@ -32,7 +32,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'Arts',
     },
-    {
+    { image: "/images/Ashaq.png",
       name: isUrdu ? 'ڈاکٹر عاشق علی' : 'Dr. Ashaq Ali',
       designation: isUrdu ? 'لیکچرر' : 'Associate Professor',
       subject: isUrdu ? 'ریاضی' : 'Mathematics',
@@ -40,7 +40,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'science',
     },
-    {
+    { image: "/images/Sakhwat.png",
       name: isUrdu ? 'ڈاکٹر عمر فاروق' : 'Sakhwat Ali',
       designation: isUrdu ? 'ایسوسی ایٹ پروفیسر' : 'Associate Professor',
       subject: isUrdu ? 'کمپیوٹر سائنس' : 'Urdu',
@@ -48,7 +48,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'Arts',
     },
-    {
+    {  image: "/images/Shahzad.png",
       name: isUrdu ? 'سارہ احمد' : 'Shahzad Alam',
       designation: isUrdu ? 'لیکچرر' : 'Associate Professor',
       subject: isUrdu ? 'پروگرامنگ' : 'Biology',
@@ -65,7 +65,7 @@ const Faculty = ({ isUrdu }) => {
       department: 'Arts',
     },
 
-    {
+    { image: "/images/Riaz.png",
       name: isUrdu ? 'محمد اکرم' : 'Mian Riaz Ali',
       designation: isUrdu ? 'اسسٹنٹ پروفیسر' : 'Lecturer',
       subject: isUrdu ? 'ڈیٹا بیس' : 'Persian',
@@ -73,7 +73,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'Arts',
     },
-    {
+    { image: "/images/Khalid.png",
       name: isUrdu ? 'ڈاکٹر علی حسن' : 'Muhammad Khalid Irfan',
       designation: isUrdu ? 'پروفیسر' : 'Lecturer',
       subject: isUrdu ? 'اکاؤنٹنگ' : 'Education',
@@ -81,7 +81,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'Arts',
     },
-    {
+    { image: "/images/Tayyab.png",
       name: isUrdu ? 'ماریہ سلیم' : 'Tayyab Naseer',
       designation: isUrdu ? 'لیکچرر' : 'Lecturer',
       subject: isUrdu ? 'بزنس ایڈمنسٹریشن' : 'Physics',
@@ -89,7 +89,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'science',
     },
-    {
+    { image: "/images/Ghayas.png",
       name: isUrdu ? 'احسان اللہ' : 'Ghayas Ahmed',
       designation: isUrdu ? 'اسسٹنٹ پروفیسر' : 'Lecturer',
       subject: isUrdu ? 'اقتصادیات' : 'Political Science',
@@ -97,7 +97,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'Arts',
     },
-    {
+    { image: "/images/Waqas.png",
       name: isUrdu ? 'ڈاکٹر ناہید سلطانہ' : 'Muhammad Waqas',
       designation: isUrdu ? 'ایسوسی ایٹ پروفیسر' : 'Lecturer',
       subject: isUrdu ? 'اردو' : 'Chemistry',
@@ -105,7 +105,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'science',
     },
-    {
+    { image: "/images/Ijaz.png",
       name: isUrdu ? 'زبیر احمد' : 'Ijaz Ahmed Sakia ',
       designation: isUrdu ? 'اسسٹنٹ پروفیسر' : 'Lecturer',
       subject: isUrdu ? 'انگلش' : 'Islamiat',
@@ -113,7 +113,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'arts',
     },
-    {
+    { image: "/images/jibran.png",
       name: isUrdu ? 'ڈاکٹر شاہد محمود' : 'Jibran Azeem',
       designation: isUrdu ? 'پروفیسر' : 'Lecturer',
       subject: isUrdu ? 'اسلامیات' : 'Commerce',
@@ -121,7 +121,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'Commerce',
     },
-    {
+    { image: "/images/tahir.png",
       name: isUrdu ? 'رابعہ خان' : 'Muhammad Tahir Latif',
       designation: isUrdu ? 'لیکچرر' : 'Lecturer',
       subject: isUrdu ? 'پاکستان اسٹڈیز' : 'Health and Physical Education',
@@ -137,7 +137,7 @@ const Faculty = ({ isUrdu }) => {
       email: '',
       department: 'arts',
     },
-    {
+    { image: "/images/tanzeel.png",
       name: isUrdu ? 'رابعہ خان' : 'Muhammad Tanzeel Jibran',
       designation: isUrdu ? 'لیکچرر' : 'Librarian',
       subject: isUrdu ? 'پاکستان اسٹڈیز' : 'Library Science',

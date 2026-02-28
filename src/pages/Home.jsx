@@ -8,22 +8,30 @@ const Home = ({ isUrdu }) => {
   // Latest Announcements Data
   const notices = [
     {
-      title: isUrdu ? 'بی ایس پروگرام 2026 میں داخلے کھل گئے' : 'RevsionPlan 2026',
-      description: isUrdu
+      title: isUrdu ? 'بی ایس پروگرام 2026 میں داخلے کھل گئے' : 'BS Program 2026 Admissions Open',
+      description: isUrdu 
         ? 'بی ایس پروگرامز میں داخلے کے لیے درخواستیں 28 فروری تک جمع کرائی جا سکتی ہیں۔'
-        : 'Revision Plan 2026',
+        : 'Applications for BS programs are now being accepted. Last date to apply is February 28, 2026.',
       date: 'Feb 15, 2026',
-      category: 'Revision Plan',
+      category: 'admission',
       isPinned: true,
     },
     {
-      title: isUrdu ? 'اہم: سالانہ امتحانات کا شیڈول' : 'Important: Annual Examination Pre-Board Schedule',
+      title: isUrdu ? 'اہم: سالانہ امتحانات کا شیڈول' : 'Important: Annual Examination Schedule',
       description: isUrdu
         ? 'سالانہ امتحانات 1 مارچ سے شروع ہوں گے۔ تفصیلی ٹائم ٹیبل نوٹس بورڈ پر دیکھیں۔'
-        : 'Annual examinations will commence from March 30, 2026. Detailed timetable available on notice board.',
+        : 'Annual examinations will commence from March 1, 2026. Detailed timetable available on notice board.',
       date: 'Feb 20, 2026',
       category: 'exam',
       isPinned: true,
+    },
+    {
+      title: isUrdu ? 'سائنس میلہ کا انعقاد' : 'Annual Science Fair',
+      description: isUrdu
+        ? '20 مارچ کو سائنس میلہ کا انعقاد ہوگا۔ تمام طلبا شرکت کی دعوت ہیں۔'
+        : 'Annual Science Fair will be held on March 20, 2026. All students are invited to participate.',
+      date: 'Feb 18, 2026',
+      category: 'event',
     },
     {
       title: isUrdu ? 'نتائج کی تاریخ کا اعلان' : 'Result Announcement Date',
@@ -39,11 +47,9 @@ const Home = ({ isUrdu }) => {
   const principalMessage = {
     name: isUrdu ? 'پروفیسر شفقت حبیب آغا' : 'Prof. Shafqat Habib Agha',
     designation: isUrdu ? 'پرنسپل' : 'Principal',
-    education: isUrdu ? 'ایم ایس سی' : 'M.Phil Pol Science',
     message: isUrdu
       ? 'گورنمنٹ گریجویٹ کالج مریدکے میں آپ کا خیر مقدم ہے۔ ہم اپنے طلبا کو اعلیٰ تعلیم فراہم کرنے اور انہیں کامیاب مستقبل کے لیے تیار کرنے کے لیے پرعزم ہیں۔'
       : 'Welcome to Government Graduate College Muridke. We are committed to providing quality education and preparing our students for a successful future. Our dedicated faculty and modern facilities ensure an excellent learning environment.',
-    image: "/images/principalImg.jpeg",
   }
 
   // Quick Links Data
@@ -104,25 +110,12 @@ const Home = ({ isUrdu }) => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Principal Image */}
               <div className="relative">
-                <div className="rounded-2xl overflow-hidden shadow-2xl">
-                  <img
-                    src={principalMessage.image}
-                    alt={principalMessage.name}
-                    className="w-full h-[700px] object-cover object-top"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none'
-                      e.currentTarget.nextElementSibling.style.display = 'flex'
-                    }}
-                  />
-                  {/* Fallback shown if image fails to load */}
-                  <div
-                    className="w-full h-[500px] bg-gradient-to-br from-college-green-200 to-college-green-400 items-center justify-center"
-                    style={{ display: 'none' }}
-                  >
+                <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
+                  <div className="w-full h-[500px] bg-gradient-to-br from-college-green-200 to-college-green-400 flex items-center justify-center">
                     <div className="w-48 h-48 bg-white rounded-full flex items-center justify-center shadow-xl">
                       <span className="text-college-green-600 text-7xl font-bold">
                         {principalMessage.name.charAt(0)}
-                      </span>
+                  </span>
                     </div>
                   </div>
                 </div>
@@ -138,7 +131,7 @@ const Home = ({ isUrdu }) => {
                     {isUrdu ? 'پرنسپل کا پیغام' : "Principal's Message"}
                   </span>
                   <h2 className="section-title mt-2">
-                    {isUrdu ? 'خوش آمدید' : 'Welcome to Government Graduate College Muridke'}
+                    {isUrdu ? 'خوش آمدید' : 'Welcome to GGC Muridke'}
                   </h2>
                 </div>
 
@@ -156,14 +149,13 @@ const Home = ({ isUrdu }) => {
                     {principalMessage.designation}
                   </p>
                 </div>
-                <>
-                  <Link
-                    to="/about"
-                    className="inline-block btn-primary"
-                  >
-                    {isUrdu ? 'مزید جانیں' : 'Learn More About Us'}
-                  </Link>
-                </>
+
+                <Link
+                  to="/about"
+                  className="inline-block btn-primary"
+                >
+                  {isUrdu ? 'مزید جانیں' : 'Learn More About Us'}
+                </Link>
               </div>
             </div>
           </div>
@@ -181,7 +173,7 @@ const Home = ({ isUrdu }) => {
               {isUrdu ? 'اعلانات و خبریں' : 'Announcements & News'}
             </h2>
             <p className="section-subtitle mt-4">
-              {isUrdu
+              {isUrdu 
                 ? 'کالج کی تازہ ترین خبروں اور اعلانات سے باخبر رہیں'
                 : 'Stay updated with the latest news and announcements from the college'
               }

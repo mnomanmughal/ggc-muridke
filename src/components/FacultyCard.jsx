@@ -5,14 +5,14 @@ const FacultyCard = ({ name, designation, subject, qualification, email, image, 
   return (
     <div className="card hover-lift group">
       {/* Image Section */}
-      <div className="relative overflow-hidden h-64 bg-gradient-to-br from-college-green-100 to-college-green-200">
-        {image ? (
-          <img 
-            src={image} 
-            alt={name}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-          />
-        ) : (
+     <div className="relative overflow-hidden aspect-[4/5] bg-gray-100">
+  {image ? (
+    <img
+      src={image}
+      alt={name}
+      className="w-full h-full object-contain object-center p-2 bg-white group-hover:scale-105 transition-transform duration-500"
+    />
+  ) : (
           <div className="w-full h-full flex items-center justify-center">
             <div className="w-32 h-32 bg-college-green-600 rounded-full flex items-center justify-center">
               <span className="text-white text-4xl font-bold">
