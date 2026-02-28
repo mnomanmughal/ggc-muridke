@@ -54,7 +54,7 @@ const Navbar = ({ isUrdu, toggleLanguage }) => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          <Link to="/" className="flex items-center space-x-3 group min-w-0">
             <div className="w-14 h-14 rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow border-2 border-college-green-600">
               <img 
                 src="/images/logo.jpeg" 
@@ -62,12 +62,17 @@ const Navbar = ({ isUrdu, toggleLanguage }) => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="hidden md:block">
-              <h1 className="font-display font-bold text-xl text-gray-900 leading-tight">
-                {isUrdu ? 'گورنمنٹ گریجویٹ کالج' : 'Government Graduate College'}
+            <div className="min-w-0">
+              <h1 className="font-display font-bold text-xs sm:text-sm md:text-xl text-gray-900 leading-tight whitespace-normal break-words max-w-[150px] sm:max-w-[220px] md:max-w-none">
+                <span className="md:hidden">
+                  {isUrdu ? 'گورنمنٹ گریجویٹ کالج مریدکے' : 'Government Graduate College Muridke'}
+                </span>
+                <span className="hidden md:inline">
+                  {isUrdu ? 'گورنمنٹ گریجویٹ کالج' : 'Government Graduate College'}
+                </span>
               </h1>
-              <p className="text-sm text-college-green-600 font-semibold">
-                {isUrdu ? 'مریدکے' : 'Muridke'}
+              <p className="hidden md:block text-sm text-college-green-600 font-semibold">
+                {isUrdu ? 'مریدکے' : 'Muridke | Sheikhupura'}
               </p>
             </div>
           </Link>

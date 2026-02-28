@@ -32,6 +32,11 @@ const Hero = ({ isUrdu }) => {
       title: isUrdu ? 'کھیلوں کی سہولیات' : 'Computer Lab',
       subtitle: isUrdu ? 'جسمانی اور ذہنی نشوونما' : 'Well Equiped Computer Lab',
     },
+    {
+      image: '/images/gallery/physics.jpg',
+      title: isUrdu ? 'کھیلوں کی سہولیات' : 'Physics Lab',
+      subtitle: isUrdu ? 'جسمانی اور ذہنی نشوونما' : 'Well Equiped Physics Lab',
+    },
   ]
 
   const stats = [
@@ -84,7 +89,7 @@ const Hero = ({ isUrdu }) => {
           <img
             src={slide.image}
             alt={slide.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover width-500 "
           />
           {/* Dark Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-pakistan-green/60 to-college-green-800/70"></div>
@@ -123,7 +128,7 @@ const Hero = ({ isUrdu }) => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Left Content */}
@@ -142,7 +147,7 @@ const Hero = ({ isUrdu }) => {
               {slides[currentSlide].subtitle}
             </p>
 
-            <p className="text-lg text-green-200">
+            <p className="text-lg text-green-200 ">
               {isUrdu
                 ? 'علم، کردار اور قیادت کے ذریعے مستقبل کو روشن کرنا'
                 : 'Illuminating futures through knowledge, character, and leadership since 2015'

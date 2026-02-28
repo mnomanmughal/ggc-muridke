@@ -43,15 +43,29 @@ const Gallery = ({ isUrdu }) => {
       categoryEn: 'Campus',
     },
     {
+      url: '/images/gallery/physics.jpg',
+      title: isUrdu ? 'سائنس لیب' : 'Physics Laboratory',
+      description: isUrdu ? 'جدید لیبارٹری کی سہولیات' : 'Modern lab facilities',
+      category: isUrdu ? 'سہولیات' : 'Facilities',
+      categoryEn: 'Facilities',
+    },
+     {
       url: '/images/campus6.jpg',
-      title: isUrdu ? 'سائنس لیب' : 'Science Laboratory',
+      title: isUrdu ? 'سائنس لیب' : 'Biology Laboratory',
+      description: isUrdu ? 'جدید لیبارٹری کی سہولیات' : 'Modern lab facilities',
+      category: isUrdu ? 'سہولیات' : 'Facilities',
+      categoryEn: 'Facilities',
+    },
+     {
+      url: '/images/campus6.jpg',
+      title: isUrdu ? 'سائنس لیب' : 'Chemistry Laboratory',
       description: isUrdu ? 'جدید لیبارٹری کی سہولیات' : 'Modern lab facilities',
       category: isUrdu ? 'سہولیات' : 'Facilities',
       categoryEn: 'Facilities',
     },
     {
-      url: '/images/campus7.jpg',
-      title: isUrdu ? 'کمپیوٹر لیب' : 'Computer Lab',
+      url: '/images/gallery/computer.jpg',
+      title: isUrdu ? 'کمپیوٹر لیب' : 'computer Lab',
       description: isUrdu ? 'تازہ ترین ٹیکنالوجی' : 'Latest technology',
       category: isUrdu ? 'سہولیات' : 'Facilities',
       categoryEn: 'Facilities',
@@ -68,9 +82,9 @@ const Gallery = ({ isUrdu }) => {
       category: isUrdu ? 'تقریبات' : 'Events',
       categoryEn: 'Events',
     },
-    {
-      title: isUrdu ? 'سائنس میلہ' : 'Science Fair',
-      description: isUrdu ? 'طلباء کی سائنسی نمائش' : 'Student science exhibition',
+    { url: '/images/gallery/MEETA.jpeg',
+      title: isUrdu ? 'سائنس میلہ' : 'MEETA',
+      description: isUrdu ? 'طلباء کی سائنسی نمائش' : 'Medical Engineering Entry Test Awereness',
       category: isUrdu ? 'تقریبات' : 'Events',
       categoryEn: 'Events',
     },
@@ -82,6 +96,12 @@ const Gallery = ({ isUrdu }) => {
     },
     {
       title: isUrdu ? 'کرکٹ میچ' : 'Cricket Match',
+      description: isUrdu ? 'انٹر کالج میچ' : 'Inter-college match',
+      category: isUrdu ? 'کھیل' : 'Sports',
+      categoryEn: 'Sports',
+    },
+    { 
+      title: isUrdu ? 'کرکٹ میچ' : 'Caltur Day',
       description: isUrdu ? 'انٹر کالج میچ' : 'Inter-college match',
       category: isUrdu ? 'کھیل' : 'Sports',
       categoryEn: 'Sports',
@@ -195,7 +215,7 @@ const Gallery = ({ isUrdu }) => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/18GRuokg3M/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"

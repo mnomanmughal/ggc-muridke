@@ -45,11 +45,12 @@ const Home = ({ isUrdu }) => {
 
   // Principal's Message
   const principalMessage = {
+    image: '/images/principal.png',
     name: isUrdu ? 'پروفیسر شفقت حبیب آغا' : 'Prof. Shafqat Habib Agha',
     designation: isUrdu ? 'پرنسپل' : 'Principal',
     message: isUrdu
-      ? 'گورنمنٹ گریجویٹ کالج مریدکے میں آپ کا خیر مقدم ہے۔ ہم اپنے طلبا کو اعلیٰ تعلیم فراہم کرنے اور انہیں کامیاب مستقبل کے لیے تیار کرنے کے لیے پرعزم ہیں۔'
-      : 'Welcome to Government Graduate College Muridke. We are committed to providing quality education and preparing our students for a successful future. Our dedicated faculty and modern facilities ensure an excellent learning environment.',
+      ? ' ہم اپنے طلبا کو اعلیٰ تعلیم فراہم کرنے اور انہیں کامیاب مستقبل کے لیے تیار کرنے کے لیے پرعزم ہیں۔'
+      : 'We are committed to providing quality education and preparing our students for a successful future. Our dedicated faculty and modern facilities ensure an excellent learning environment.',
   }
 
   // Quick Links Data
@@ -110,14 +111,12 @@ const Home = ({ isUrdu }) => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Principal Image */}
               <div className="relative">
-                <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
-                  <div className="w-full h-[500px] bg-gradient-to-br from-college-green-200 to-college-green-400 flex items-center justify-center">
-                    <div className="w-48 h-48 bg-white rounded-full flex items-center justify-center shadow-xl">
-                      <span className="text-college-green-600 text-7xl font-bold">
-                        {principalMessage.name.charAt(0)}
-                  </span>
-                    </div>
-                  </div>
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    src={principalMessage.image}
+                    alt={principalMessage.name}
+                    className="w-full h-[620px] md:h-[700px] object-cover object-top"
+                  />
                 </div>
                 {/* Decorative Elements */}
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-college-green-500 rounded-full opacity-20 blur-3xl"></div>
@@ -131,7 +130,7 @@ const Home = ({ isUrdu }) => {
                     {isUrdu ? 'پرنسپل کا پیغام' : "Principal's Message"}
                   </span>
                   <h2 className="section-title mt-2">
-                    {isUrdu ? 'خوش آمدید' : 'Welcome to GGC Muridke'}
+                    {isUrdu ? 'خوش آمدید' : 'Welcome to Govt. Graduate College Muridke'}
                   </h2>
                 </div>
 

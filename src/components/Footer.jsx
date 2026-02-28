@@ -35,14 +35,18 @@ const Footer = ({ isUrdu }) => {
           {/* College Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                <span className="text-college-green-600 font-bold text-lg"></span>
+              <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center border border-white/30">
+                <img
+                  src="/images/logo.jpeg"
+                  alt="GGC Muridke Logo"
+                  className="w-full h-full object-cover width-auto height-auto"
+                />
               </div>
               <div>
                 <h3 className="font-display font-bold text-xl">
-                  {isUrdu ? 'گورنمنٹ گریجویٹ کالج' : 'GovernmentGraduate College'}
+                  {isUrdu ? 'گورنمنٹ گریجویٹ کالج' : 'Government Graduate College'}
                 </h3>
-                <p className="text-sm text-green-200">
+                <p className="text-sm text-green-50 font-display font-bold text-xl">
                   {isUrdu ? 'مریدکے' : 'Muridke'}
                 </p>
               </div>
@@ -124,14 +128,14 @@ const Footer = ({ isUrdu }) => {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-300" />
-                <a href="tel:+92495250123" className="text-green-100 hover:text-white transition-colors">
-                  +92-495-250123
+                <a href="tel:+92-423-7990400" className="text-green-100 hover:text-white transition-colors">
+                  +92-423-7990400
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-green-300" />
-                <a href="mailto:info@ggcmuridke.edu.pk" className="text-green-100 hover:text-white transition-colors">
-                  info@ggcmuridke.edu.pk
+                <a href="mailto:gc.muridke@gmail.com" className="text-green-100 hover:text-white transition-colors">
+                  gc.muridke@gmail.com
                 </a>
               </li>
             </ul>

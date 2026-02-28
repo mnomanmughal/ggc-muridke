@@ -5,10 +5,10 @@ import { Bell } from 'lucide-react'
 const News = ({ isUrdu }) => {
   const allNotices = [
     {
-      title: isUrdu ? 'بی ایس پروگرام 2026 میں داخلے کھل گئے' : 'BS Program 2026 Admissions Open',
+      title: isUrdu ? 'بی ایس پروگرام 2026 میں داخلے کھل گئے' : 'ADP Program 2026 Admissions Open',
       description: isUrdu 
         ? 'بی ایس پروگرامز میں داخلے کے لیے درخواستیں 28 فروری تک جمع کرائی جا سکتی ہیں۔ مزید معلومات کے لیے داخلہ آفس سے رابطہ کریں۔'
-        : 'Applications for BS programs are now being accepted. Last date to apply is February 28, 2026. Contact admission office for details.',
+        : 'Applications for ADP programs are now being accepted. Last date to apply is February 28, 2026. Contact admission office for details.',
       date: 'Feb 15, 2026',
       category: 'admission',
       isPinned: true,
