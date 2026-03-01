@@ -13,7 +13,7 @@ const Hero = ({ isUrdu }) => {
       subtitle: isUrdu ? 'گورنمنٹ گریجویٹ کالج مریدکے' : 'Government Graduate College Muridke',
     },
     {
-      image: '/images/campus3.jpg',
+      image: '/images/moderncomputer.png',
       title: isUrdu ? 'جدید کیمپس' : 'Modern Campus',
       subtitle: isUrdu ? 'معیاری تعلیم کے لیے بہترین سہولیات' : 'World-Class Facilities for Quality Education',
     },

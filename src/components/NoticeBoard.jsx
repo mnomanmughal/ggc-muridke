@@ -55,9 +55,11 @@ const NoticeBoard = ({ notices, isUrdu, showAll = false }) => {
                 {notice.link && (
                   <a
                     href={notice.link}
+                    target={notice.link.endsWith('.pdf') ? '_blank' : undefined}
+                    rel={notice.link.endsWith('.pdf') ? 'noopener noreferrer' : undefined}
                     className="flex items-center space-x-1 text-sm text-college-green-600 hover:text-college-green-700 font-semibold group-hover:translate-x-1 transition-transform"
                   >
-                    <span>{isUrdu ? 'مزید پڑھیں' : 'Read More'}</span>
+                    <span>{notice.link.endsWith('.pdf') ? (isUrdu ? 'پی ڈی ایف دیکھیں' : 'View PDF') : (isUrdu ? 'مزید پڑھیں' : 'Read More')}</span>
                     <ArrowRight className="w-4 h-4" />
                   </a>
                 )}
